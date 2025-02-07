@@ -42,9 +42,11 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = ['rgb(4,7,29)'];
+  const backgroundColors = ['rgb(4,7,29)', 'rgb(4,7,28)', 'rgb(4,7,27)'];
   const linearGradients = [
     'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
+    'linear-gradient(90deg, rgba(4,7,28,1) 0%, rgba(12,14,35,1) 100%)',
+    'linear-gradient(90deg, rgba(4,7,27,1) 0%, rgba(12,14,35,1) 100%)',
   ];
 
   return (
@@ -52,7 +54,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 "
+      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">

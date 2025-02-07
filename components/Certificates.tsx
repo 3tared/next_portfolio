@@ -8,7 +8,7 @@ const content = certificates.map(({ title, description, img, link }) => ({
   link,
   content: (
     <a
-      className="h-full w-full flex items-center justify-center "
+      className={`h-full w-full flex items-center justify-center`}
       href={link}
       target="_blank"
     >
